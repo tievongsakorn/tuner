@@ -1,4 +1,6 @@
-# Guitar Tuner Web Application
+#THIS Project is create by AI For my Coding education perpose : Vongsakorntie
+
+# Guitar Tuner Web Application 
 
 A simple, accurate guitar tuner built with vanilla JavaScript using the Web Audio API. This tuner provides real-time pitch detection and visual feedback for tuning your guitar.
 
@@ -44,7 +46,3 @@ For best results:
 - Ensure your microphone is working properly
 - Allow the tuner a moment to stabilize when you start playing a note
 - Keep your guitar close to the microphone
-
-## License
-
-MIT License - Feel free to use and modify for your own projects. 
