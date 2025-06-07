@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Tuner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guitar Tuner</h1>
+        <div class="tuner-display">
+            <div class="note-display">
+                <span id="current-note">--</span>
+                <span id="cents">0</span>
+            </div>
+            <div class="frequency-display">
+                <span id="frequency">0</span> Hz
+            </div>
+        </div>
+        <div class="tuner-needle"></div>
+        <button id="start-button">Start Tuner</button>
+        <div class="string-guide">
+            <p>Standard Tuning: E2 (82.41 Hz), A2 (110.00 Hz), D3 (146.83 Hz), G3 (196.00 Hz), B3 (246.94 Hz), E4 (329.63 Hz)</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

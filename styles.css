@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #4CAF50;
+    font-size: 2.5rem;
+}
+
+.tuner-display {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.note-display {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#cents {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-left: 0.5rem;
+}
+
+.frequency-display {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.tuner-needle {
+    width: 2px;
+    height: 100px;
+    background: #4CAF50;
+    margin: 0 auto;
+    transform-origin: bottom center;
+    transition: transform 0.1s ease;
+}
+
+#start-button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2rem 0;
+    transition: background 0.3s ease;
+}
+
+#start-button:hover {
+    background: #45a049;
+}
+
+.string-guide {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 2rem;
+    line-height: 1.5;
+} 
