@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Tuner</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <h1 class="title">Guitar Tuner</h1>
+            <p class="subtitle">Tap a string to tune</p>
+        </header>
+
+        <main class="tuner">
+            <div class="frequency-display">
+                <div class="current-note" id="currentNote">--</div>
+                <div class="current-frequency" id="currentFreq">-- Hz</div>
+            </div>
+
+            <div class="tuning-meter">
+                <div class="meter-track">
+                    <div class="meter-fill" id="meterFill"></div>
+                    <div class="meter-needle" id="meterNeedle"></div>
+                </div>
+                <div class="meter-labels">
+                    <span>♭</span>
+                    <span>♯</span>
+                </div>
+            </div>
+
+            <div class="strings-grid">
+                <div class="string-item" data-string="0">
+                    <div class="string-number">6</div>
+                    <div class="string-note">E</div>
+                    <div class="string-frequency">82.4 Hz</div>
+                    <div class="string-indicator" id="indicator-0"></div>
+                </div>
+                <div class="string-item" data-string="1">
+                    <div class="string-number">5</div>
+                    <div class="string-note">A</div>
+                    <div class="string-frequency">110.0 Hz</div>
+                    <div class="string-indicator" id="indicator-1"></div>
+                </div>
+                <div class="string-item" data-string="2">
+                    <div class="string-number">4</div>
+                    <div class="string-note">D</div>
+                    <div class="string-frequency">146.8 Hz</div>
+                    <div class="string-indicator" id="indicator-2"></div>
+                </div>
+                <div class="string-item" data-string="3">
+                    <div class="string-number">3</div>
+                    <div class="string-note">G</div>
+                    <div class="string-frequency">196.0 Hz</div>
+                    <div class="string-indicator" id="indicator-3"></div>
+                </div>
+                <div class="string-item" data-string="4">
+                    <div class="string-number">2</div>
+                    <div class="string-note">B</div>
+                    <div class="string-frequency">246.9 Hz</div>
+                    <div class="string-indicator" id="indicator-4"></div>
+                </div>
+                <div class="string-item" data-string="5">
+                    <div class="string-number">1</div>
+                    <div class="string-note">E</div>
+                    <div class="string-frequency">329.6 Hz</div>
+                    <div class="string-indicator" id="indicator-5"></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="startBtn" class="control-btn primary">
+                    <span class="btn-text">Start Tuning</span>
+                </button>
+                <button id="stopBtn" class="control-btn secondary" disabled>
+                    <span class="btn-text">Stop</span>
+                </button>
+            </div>
+
+            <div class="status" id="status">
+                Tap "Start Tuning" to begin
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
